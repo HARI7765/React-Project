@@ -1,0 +1,332 @@
+/* Courses.css */
+/* Inherits base styles from HomePage.css */
+
+/* Page Banner */
+.page-banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/banner-courses.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 80px 0;
+  }
+  
+  .page-banner h1 {
+    font-size: 48px;
+    margin-bottom: 15px;
+  }
+  
+  .page-banner p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: 0 auto;
+    opacity: 0.9;
+  }
+  
+  /* Course Filter Styles */
+  .course-filter {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    margin-bottom: 40px;
+  }
+  
+  .filter-buttons {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+  
+  .filter-buttons button {
+    padding: 10px 20px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 30px;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s;
+  }
+  
+  .filter-buttons button:hover {
+    border-color: #f7a81b;
+    color: #f7a81b;
+  }
+  
+  .filter-buttons button.active {
+    background-color: #f7a81b;
+    color: #fff;
+    border-color: #f7a81b;
+  }
+  
+  /* Courses Grid */
+  .courses-listing {
+    padding: 40px 0 80px;
+  }
+  
+  .courses-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 30px;
+  }
+  
+  .course-card {
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .course-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .course-image {
+    position: relative;
+  }
+  
+  .course-image img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .course-overlay {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+  }
+  
+  .course-level {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  
+  .course-content {
+    padding: 20px;
+  }
+  
+  .course-content h3 {
+    margin-bottom: 10px;
+    color: #333;
+    font-size: 20px;
+  }
+  
+  .course-desc {
+    color: #666;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.6;
+  }
+  
+  .course-meta {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .meta-item {
+    display: flex;
+    align-items: center;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .meta-item i {
+    margin-right: 5px;
+    color: #f7a81b;
+  }
+  
+  .course-actions {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .course-btn {
+    display: inline-block;
+    color: #f7a81b;
+    font-weight: bold;
+    font-size: 14px;
+    position: relative;
+  }
+  
+  .course-btn:after {
+    content: "→";
+    margin-left: 5px;
+    transition: margin-left 0.3s;
+  }
+  
+  .course-btn:hover:after {
+    margin-left: 10px;
+  }
+  
+  .enroll-btn {
+    display: inline-block;
+    background-color: #f7a81b;
+    color: #fff;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 14px;
+    transition: background-color 0.3s;
+  }
+  
+  .enroll-btn:hover {
+    background-color: #e69500;
+  }
+  
+  .no-courses {
+    text-align: center;
+    padding: 40px 0;
+    color: #666;
+  }
+  
+  /* Course Benefits Section */
+  .course-benefits {
+    background-color: #f8f9fa;
+    padding: 60px 0;
+  }
+  
+  .benefits-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 30px;
+  }
+  
+  .benefit-card {
+    background-color: #fff;
+    text-align: center;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+  }
+  
+  .benefit-card:hover {
+    transform: translateY(-10px);
+  }
+  
+  .benefit-icon {
+    margin-bottom: 20px;
+  }
+  
+  .benefit-icon img {
+    width: 60px;
+    height: 60px;
+  }
+  
+  .benefit-card h3 {
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  .benefit-card p {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  /* FAQ Section */
+  .faq-section {
+    padding: 60px 0;
+  }
+  
+  .faq-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+  }
+  
+  .faq-item {
+    background-color: #f8f9fa;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  }
+  
+  .faq-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+    font-size: 18px;
+  }
+  
+  .faq-item p {
+    color: #666;
+    line-height: 1.6;
+  }
+  
+  /* CTA Section */
+  .cta-buttons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  /* Active Navigation Indicator */
+  .nav-menu a.active {
+    color: #f7a81b;
+    font-weight: bold;
+  }
+  
+  /* Responsive Styles */
+  @media screen and (max-width: 992px) {
+    .courses-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .benefits-grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .faq-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .page-banner h1 {
+      font-size: 36px;
+    }
+    
+    .filter-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .filter-buttons button {
+      width: 100%;
+      max-width: 300px;
+    }
+    
+    .courses-grid {
+      grid-template-columns: 1fr;
+    }
+    
+    .cta-buttons {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .benefit-card {
+      padding: 20px 15px;
+    }
+  }
+  
+  /* Icon placeholders - would be replaced with actual icons */
+  .icon-clock:before {
+    content: '⏱️';
+    margin-right: 5px;
+  }
+  
+  .icon-tag:before {
+    content: '💰';
+    margin-right: 5px;
+  }

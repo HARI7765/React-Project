@@ -1,0 +1,141 @@
+/* Top Bar */
+.top-bar {
+  background-color: #f7a81b;
+  padding: 10px 0;
+}
+
+.top-bar .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.contact-info .phone {
+  color: #333;
+  font-weight: 500;
+}
+
+.top-links a {
+  color: #333;
+  margin-left: 20px;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.top-links a:hover {
+  color: #000;
+}
+
+.register-btn {
+  background-color: #000;
+  color: #fff !important;
+  padding: 8px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.register-btn:hover {
+  background-color: #222;
+}
+
+/* Main Navigation */
+.main-nav {
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 15px 0;
+}
+
+.main-nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo img {
+  height: 60px;
+}
+
+.nav-menu {
+  display: flex;
+  list-style: none;
+}
+
+.nav-menu li {
+  margin-left: 30px;
+}
+
+.nav-menu a {
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-menu a:hover {
+  color: #f7a81b;
+}
+
+.contact-btn {
+  border: 2px solid #333;
+  padding: 10px 20px;
+  border-radius: 30px;
+  transition: all 0.3s;
+}
+
+.contact-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.menu-toggle span {
+  display: block;
+  height: 3px;
+  width: 100%;
+  background-color: #333;
+  border-radius: 3px;
+}
+
+/* Responsive Styles for Navigation */
+@media screen and (max-width: 768px) {
+  .menu-toggle {
+    display: flex;
+  }
+
+  nav {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 100%;
+    background: white;
+    z-index: 1000;
+    height: 0;
+    overflow: hidden;
+    transition: height 0.3s ease;
+  }
+
+  nav.nav-open {
+    height: auto;
+    padding: 20px 0;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+}

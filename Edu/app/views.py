@@ -1,11 +1,12 @@
-from rest_framework import serializers
-from .models import *
-import .serializers import *
+from rest_framework import viewsets
+from .models import Course, Contact
+from .serializers import CourseSerializer, ContactSerializer
+
+class CourseViewSet(viewsets.ModelViewSet):
+    queryset = Course.objects.all()
+    serializer_class = CourseSerializer
 
 
-class CoursesViewset(viewsets.ModelViewSet):
-    queryset = Courses.objects.all()
-    serializers_class = CourseSerializer
-
-class contactViewSet(viewsets.ModelViewSet):
-    query
+class ContactViewset(viewsets.ModelViewSet):  
+    queryset = Contact.objects.all()
+    serializer_class = ContactSerializer

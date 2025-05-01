@@ -1,0 +1,444 @@
+/* HomePage.css */
+/* Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #f8f9fa; /* Background color similar to the nav */
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Button Styles */
+.primary-btn {
+  display: inline-block;
+  background-color: #f7a81b; /* Navigation button color */
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.primary-btn:hover {
+  background-color: #e69500;
+}
+
+.secondary-btn {
+  display: inline-block;
+  background-color: transparent;
+  color: #333;
+  border: 2px solid #333;
+  padding: 10px 25px;
+  border-radius: 5px;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.secondary-btn:hover {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Section Styling */
+section {
+  padding: 60px 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 40px;
+  font-size: 32px;
+  position: relative;
+}
+
+.section-title:after {
+  content: '';
+  display: block;
+  width: 80px;
+  height: 4px;
+  background-color: #f7a81b; /* Matching the navigation highlight color */
+  margin: 15px auto 0;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(to right, #f8f9fa, #e9ecef); /* Match nav color */
+  padding: 80px 0;
+}
+
+.hero .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hero-content {
+  flex: 1;
+  padding-right: 40px;
+}
+
+.hero-content h1 {
+  font-size: 42px;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.hero-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.hero-image {
+  flex: 1;
+  text-align: center;
+}
+
+/* Features Section */
+.features {
+  background-color: #fff;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+}
+
+.feature-card {
+  text-align: center;
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  margin-bottom: 20px;
+}
+
+.feature-icon img {
+  width: 60px;
+  height: 60px;
+}
+
+.feature-card h3 {
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.feature-card p {
+  color: #666;
+}
+
+/* Courses Section */
+.courses {
+  background-color: #f8f9fa;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.course-card {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 15px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.course-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 20px;
+}
+
+.course-content h3 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.course-content p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.course-btn {
+  display: inline-block;
+  color: #f7a81b; /* Match navigation highlight color */
+  font-weight: bold;
+  position: relative;
+}
+
+.course-btn:after {
+  content: "→";
+  margin-left: 5px;
+  transition: margin-left 0.3s;
+}
+
+.course-btn:hover:after {
+  margin-left: 10px;
+}
+
+.courses-cta {
+  text-align: center;
+}
+
+/* Testimonials */
+.testimonials {
+  background-color: #fff;
+}
+
+.testimonial-card {
+  background-color: #f8f9fa;
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.testimonial-content {
+  font-style: italic;
+  color: #555;
+  margin-bottom: 20px;
+  font-size: 18px;
+}
+
+.testimonial-author {
+  display: flex;
+  align-items: center;
+}
+
+.testimonial-author img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+
+.testimonial-author h4 {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.testimonial-author p {
+  color: #666;
+}
+
+/* Partners */
+.partners {
+  background-color: #f8f9fa;
+}
+
+.partners-grid {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.partner-logo {
+  padding: 20px;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s;
+}
+
+.partner-logo:hover {
+  filter: grayscale(0);
+  opacity: 1;
+}
+
+.partner-logo img {
+  max-height: 60px;
+}
+
+/* Contact CTA */
+.contact-cta {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/cta-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 80px 0;
+}
+
+.cta-content h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.cta-content p {
+  font-size: 18px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 60px 0 20px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.footer-logo {
+  flex: 1;
+  margin-right: 60px;
+}
+
+.footer-logo img {
+  height: 50px;
+  margin-bottom: 15px;
+}
+
+.footer-logo p {
+  color: #ccc;
+}
+
+.footer-links {
+  flex: 2;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-column h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+  position: relative;
+}
+
+.footer-column h3:after {
+  content: '';
+  display: block;
+  width: 40px;
+  height: 3px;
+  background-color: #f7a81b;
+  margin-top: 10px;
+}
+
+.footer-column ul {
+  list-style: none;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  transition: color 0.3s;
+}
+
+.footer-column ul li a:hover {
+  color: #f7a81b;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  color: #aaa;
+}
+
+/* Responsive Styles */
+@media screen and (max-width: 992px) {
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .courses-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .footer-content {
+    flex-direction: column;
+  }
+  
+  .footer-logo {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  /* Hero */
+  .hero .container {
+    flex-direction: column;
+  }
+  
+  .hero-content {
+    padding-right: 0;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  /* Features and Courses */
+  .features-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .courses-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  /* Footer */
+  .footer-links {
+    flex-direction: column;
+  }
+  
+  .footer-column {
+    margin-bottom: 30px;
+  }
+}
